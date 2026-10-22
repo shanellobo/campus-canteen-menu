@@ -92,12 +92,17 @@ form.addEventListener("submit", event => {
   const price = Number(priceInput.value);
   const stock = Number(stockInput.value);
 
-  if (!name || !Number.isFinite(price) || price <= 0 ||
-      !Number.isInteger(stock) || stock < 0) {
-    document.getElementById("message").textContent =
-      "Enter a valid name, positive price and non-negative stock.";
-    return;
-  }
+if (
+  name === "" ||
+  !Number.isFinite(price) ||
+  price <= 0 ||
+  !Number.isInteger(stock) ||
+  stock < 0
+) {
+  document.getElementById("message").textContent =
+    "Please enter a food name, a price above zero, and valid stock.";
+  return;
+}
 
   if (editingId !== null) {
     const item = menu.find(food => food.id === editingId);

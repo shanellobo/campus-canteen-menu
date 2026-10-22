@@ -69,6 +69,12 @@ function renderMenu() {
 
       actions.append(edit, toggle, remove);
       card.append(title, price, stock, status, actions);
+      if (item.stock === 0) {
+        const warning = document.createElement("p");
+        warning.className = "unavailable";
+        warning.textContent = "Sold out — currently unavailable";
+        card.append(warning);
+      }
       list.append(card);
     });
 }

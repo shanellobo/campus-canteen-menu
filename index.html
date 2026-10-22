@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Canteen Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Campus Canteen</h1>
+    <p>Today's menu · Fresh food, easy ordering</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Manage Menu</h2>
+      <form id="menuForm">
+        <input id="foodName" placeholder="Food name" required>
+        <input id="foodPrice" type="number" min="0.01"
+          step="0.01" placeholder="Price (₹)" required>
+        <input id="foodStock" type="number" min="0"
+          step="1" placeholder="Stock quantity" required>
+        <button type="submit" id="saveButton">Add Food</button>
+      </form>
+      <p id="message" role="status"></p>
+    </section>
+
+    <section>
+      <h2>Available Menu</h2>
+      <input id="search" placeholder="Search food items...">
+      <div id="menuList" class="menu-grid"></div>
+    </section>
+  </main>
+
+  <footer>Campus Canteen · Menu Management Module</footer>
+  <script src="script.js"></script>
+</body>
+</html>

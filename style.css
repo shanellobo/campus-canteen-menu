@@ -1,0 +1,102 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #202b3c;
+}
+
+header {
+  background: #173b35;
+  color: white;
+  text-align: center;
+  padding: 30px 16px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 25px auto;
+  padding: 0 16px;
+}
+
+.panel, .food-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 12px #00000010;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input, button {
+  padding: 11px;
+  border-radius: 7px;
+  border: 1px solid #ccd4dc;
+  font-size: 15px;
+}
+
+input {
+  min-width: 150px;
+  flex: 1;
+  margin: 5px 0;
+}
+
+button {
+  background: #176b53;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #104d3d;
+}
+
+button:disabled {
+  background: #929da5;
+  cursor: not-allowed;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.food-card h3 {
+  margin-top: 0;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.available {
+  color: #176b53;
+}
+
+.unavailable {
+  color: #b42318;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #52616c;
+}

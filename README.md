@@ -18,3 +18,11 @@ Module status: Menu management implemented.
 # campus-canteen-menu
 
 Campus Canteen Pre-Order System – Menu Module using Git feature branches, commits and merge conflict resolution.
+
+## Stock Availability
+
+- Display the available quantity for each food item.
+- Show an unavailable status when an item is disabled.
+- Display a sold-out warning when stock reaches zero.
+- Allow staff to enable or disable menu items.
+- Update the menu display after stock or availability changes.

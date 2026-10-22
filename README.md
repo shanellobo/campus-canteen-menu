@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 ## Menu Management
 
@@ -11,4 +12,10 @@ The staff can manage the campus canteen menu.
 - Display success or error messages to the user.
 
 The menu is saved in the browser using localStorage.
+
 Module status: Menu management implemented.
+=======
+# campus-canteen-menu
+
+Campus Canteen Pre-Order System – Menu Module using Git feature branches, commits and merge conflict resolution.
+>>>>>>> main

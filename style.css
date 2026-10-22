@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -99,4 +98,12 @@ footer {
   text-align: center;
   padding: 20px;
   color: #52616c;
+}
+
+.food-card {
+  transition: transform 0.2s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-3px);
 }

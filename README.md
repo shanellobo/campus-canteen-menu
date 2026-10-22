@@ -11,3 +11,4 @@ The staff can manage the campus canteen menu.
 - Display success or error messages to the user.
 
 The menu is saved in the browser using localStorage.
+Module status: Menu management implemented.
